@@ -1,0 +1,74 @@
+.header {
+  text-align: center;
+  padding-top: 3%;
+}
+.secondHeader {
+  text-align: center;
+  padding-bottom: 2%;
+  padding-top: 1%;
+}
+.searchForm {
+  text-align: center;
+  padding: 3.5%;
+}
+.searchFormInput {
+  background-color: red;
+}
+.listRow {
+  position: relative;
+  padding-top: 3%;
+  max-height: 20vh;
+  min-height: 20vh;
+}
+.listColImg {
+  position: relative;
+  width: 11.5%;
+  align-items: center;
+  text-align: center;
+}
+.listColImg img {
+  display: block;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.listColTitle {
+  position: relative;
+  width: 65%;
+}
+
+.titleText {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 1.4vw;
+}
+.listColCompany {
+  position: relative;
+  width: 20%;
+}
+.companyNameText {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 1.2vw;
+}
+.buttonHandler {
+  padding: 5%;
+}
+
+.categoriesButtonContainer {
+}
+.categoriesButtonBox {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 58vw;
+}
+.categoriesButton {
+  border: 1px solid white;
+}

@@ -1,0 +1,1 @@
+_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[9],{Bwjn:function(n,w,_){(window.__NEXT_P=window.__NEXT_P||[]).push(["/setUpProxy",function(){return _("qCtZ")}])},qCtZ:function(n,w){}},[["Bwjn",0]]]);

@@ -1,0 +1,4 @@
+# Next-on-Netlify Redirects
+\_next\data\LXCG3f-HSrgF1Z7p-Otsi\index.json  /.netlify/functions/next_index  200
+/  /.netlify/functions/next_index  200
+/api/hello  /.netlify/functions/next_api_hello  200
