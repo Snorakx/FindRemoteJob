@@ -115,7 +115,7 @@
   padding: 0.5% 0% 0% 0.5%;
 }
 .categoriesButtonContainer {
-
+  max-width: 80vw;
 }
 
 .categoriesButtonBox {
@@ -160,6 +160,20 @@
 .previousButton {
   background-color: #6b86de;
 }
+.footerGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: ". . .";
+  height: 8vh;
+  background-color: #0c1738;
+}
+.footerSection {
+  text-align: center;
+  color: #fff;
+  margin-top: 2%;
+}
 
 @media (max-width: 688px) {
   .header {
@@ -171,7 +185,7 @@
     font-size: 1.75rem;
     max-width: 80vw;
   }
-    .logoTitle {
+  .logoTitle {
     font-size: 1.5rem;
     text-align: left;
     padding: 2% 0% 2% 7%;

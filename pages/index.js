@@ -240,7 +240,27 @@ export default function Home({ data }) {
         </ScrollToTop>
       </main>
 
-      <footer></footer>
+      <footer>
+        <div className={styles.footerGrid}>
+          <div className={styles.logoTitle}>
+            <img
+              src="https://i.ibb.co/ZM6Jntz/logo1.png"
+              alt="Logo"
+              className={styles.logoImg}
+            />
+            find<h3 className={styles.wordRemote}> remote </h3>jobs
+          </div>
+          <div className={styles.footerSection}>
+            Copyright © 2020 by Patryk Kozieł
+          </div>
+          <div className={styles.footerSection}>
+            Designed by{" "}
+            <span style={{ fontFamily: "Shadows Into Light" }}>Tchibo</span>
+            <br />
+            <a href="https://remotive.io/">API remotive</a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
