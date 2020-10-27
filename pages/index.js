@@ -191,6 +191,7 @@ export default function Home({ data }) {
                     href={result.url}
                     className={styles.rowHref}
                     key={result.id}
+                    target="_blank"
                   >
                     <ListGroup horizontal={true} className={styles.listRow}>
                       <ListGroup.Item className={styles.listColImg}>
@@ -251,13 +252,20 @@ export default function Home({ data }) {
             find<h3 className={styles.wordRemote}> remote </h3>jobs
           </div>
           <div className={styles.footerSection}>
-            Copyright © 2020 by Patryk Kozieł
+            Copyright © 2020 by&nbsp;
+            <a href="https://patrykkoziel.netlify.app/" target="_blank">
+              Patryk Kozieł
+            </a>
           </div>
           <div className={styles.footerSection}>
-            Designed by{" "}
-            <span style={{ fontFamily: "Shadows Into Light" }}>Tchibo</span>
+            <a href="https://www.behance.net/oliwiakawa" target="_blank">
+              Designed by
+              <span style={{ fontFamily: "Shadows Into Light" }}> Tchibo</span>
+            </a>
             <br />
-            <a href="https://remotive.io/">API remotive</a>
+            <a href="https://remotive.io/" target="_blank">
+              API remotive
+            </a>
           </div>
         </div>
       </footer>

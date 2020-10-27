@@ -263,4 +263,7 @@
     color: #151c1980;
     padding: 0.5% 0% 0% 0.5%;
   }
+  .footerGrid {
+    display: none;
+  }
 }
