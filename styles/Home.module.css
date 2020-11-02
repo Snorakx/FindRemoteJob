@@ -116,6 +116,7 @@
 }
 .categoriesButtonContainer {
   max-width: 80vw;
+  min-width:80vw;
 }
 
 .categoriesButtonBox {
