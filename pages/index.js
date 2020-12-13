@@ -4,6 +4,9 @@ import { useState, useEffect, useRef } from "react";
 import fetch from "isomorphic-unfetch";
 import ScrollToTop from "react-scroll-up";
 import { FaFilter } from "react-icons/fa";
+import Modal from "../components/modal";
+import useModal from "../components/useModal";
+
 import {
   Container,
   Row,
@@ -50,6 +53,17 @@ export default function Home({ data }) {
     firstPageItem: 0,
     lastPageItem: 15,
   });
+
+  const {
+    isShowing,
+    toggle,
+    title,
+    publicationDate,
+    companyName,
+    url,
+    jobType,
+    id,
+  } = useModal();
 
   const prevPageRef = useRef(); //0.Nan 1.0 2.3 3.3 4.3+3
   useEffect(() => {
@@ -188,10 +202,20 @@ export default function Home({ data }) {
               } else {
                 return (
                   <a
-                    href={result.url}
+                    // href={result.url}
                     className={styles.rowHref}
                     key={result.id}
                     target="_blank"
+                    onClick={() =>
+                      toggle(
+                        result.title,
+                        result.publication_date,
+                        result.company_name,
+                        result.url,
+                        result.job_type,
+                        result.id
+                      )
+                    }
                   >
                     <ListGroup horizontal={true} className={styles.listRow}>
                       <ListGroup.Item className={styles.listColImg}>
@@ -213,6 +237,16 @@ export default function Home({ data }) {
                 );
               }
             })}
+          <Modal
+            isShowing={isShowing}
+            hide={toggle}
+            title={title}
+            publicationDate={publicationDate}
+            companyName={companyName}
+            url={url}
+            jobType={jobType}
+            id={id}
+          />
         </Container>
 
         <Container className={styles.buttonHandler}>

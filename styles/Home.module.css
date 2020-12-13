@@ -11,6 +11,96 @@
   letter-spacing: 1px;
   background-color: #0c1738;
 }
+.modalBackground {
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(3px);
+}
+.modalBox {
+  display: block;
+  margin: auto;
+  margin-top: 10%;
+  background-color: #fff;
+  width: 60%;
+  min-height: 50%;
+  border: 1px solid #00000050;
+  border-radius: 5px;
+  padding: 5%;
+}
+
+.modalTitle {
+  width: 100%;
+}
+.modalImage {
+  display: block;
+  margin-left: 35%;
+  text-align: center;
+  position: absolute;
+  padding: 1%;
+}
+.modalTitleText {
+  width: 100%;
+  text-align: left;
+  padding: 1%;
+  font-size: 1.1vw;
+  color: #000000;
+  font-weight: 600;
+}
+.modalJobType {
+  width: 100%;
+  text-align: left;
+  padding: 1%;
+  font-size: 1.1vw;
+  color: #000000;
+  font-weight: 600;
+}
+.modalPublicationDate {
+  width: 100%;
+  width: 100%;
+  text-align: left;
+  padding: 1%;
+  font-size: 1.1vw;
+  color: #000000;
+  font-weight: 600;
+}
+.modalCheckMoreHref {
+  color: white;
+  font-size: 1.1vw;
+  transition: 0.1s;
+}
+.modalCheckMoreHref:hover {
+  color: #eb664c;
+  text-decoration: none;
+}
+.modalCheckMore:hover {
+  background: linear-gradient(
+    0deg,
+    rgba(78, 92, 141, 1) 0%,
+    rgba(17, 31, 77, 1) 80%
+  );
+}
+.modalCheckMore {
+  background-color: green;
+  padding: 1%;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+
+  text-align: center;
+  background: linear-gradient(
+    0deg,
+    rgba(78, 92, 141, 1) 0%,
+    rgba(17, 31, 77, 1) 100%
+  );
+}
+
 .wordRemote {
   display: inline;
   font-size: 1.5rem;
@@ -61,6 +151,7 @@
   box-shadow: 14px 14px 10px -12px #98abb7;
   margin: auto;
   margin-top: 2%;
+  cursor: pointer;
 }
 .listColImg {
   position: relative;
@@ -116,7 +207,6 @@
 }
 .categoriesButtonContainer {
   max-width: 80vw;
-  min-width:80vw;
 }
 
 .categoriesButtonBox {
@@ -174,8 +264,6 @@
   text-align: center;
   color: #fff;
   margin-top: 2%;
-  background-color:#0C1738;
-  overflow:hidden;
 }
 
 @media (max-width: 688px) {
@@ -242,6 +330,9 @@
     position: relative;
     font-size: 1.1rem;
     padding: 1% 0% 0% 0.5%;
+  }
+
+  .listColCompany {
   }
 
   .listColStripe {
