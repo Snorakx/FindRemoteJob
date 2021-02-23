@@ -74,7 +74,7 @@ export default function Home({ data }) {
   async function handleOnSubmitSearch(e) {
     setLoading(true);
     e.preventDefault();
-    const proxyurl = "https://cors-anywhere.herokuapp.com/";
+    const proxyurl = "";
     const searchEndpoint = `https://remotive.io/api/remote-jobs?search=${searchValue}`;
 
     const res = await fetch(proxyurl + searchEndpoint);
@@ -86,7 +86,7 @@ export default function Home({ data }) {
   }
   async function handleCategory1(buttonValue) {
     setLoading(true);
-    const proxyurl = "https://cors-anywhere.herokuapp.com/";
+    const proxyurl = "";
 
     const searchEndpoint = `https://remotive.io/api/remote-jobs?category=${buttonValue}&limit=60`;
 
