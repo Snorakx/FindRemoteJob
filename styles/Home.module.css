@@ -210,13 +210,19 @@
 }
 
 .categoriesButtonBox {
- display:flex;
-  padding:2rem;
+     display: flex;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .categoriesButton {
-  background: #eb664c;
-  border-radius: 0;
-  border: none;
+     background: #eb664c;
+    border-radius: 0;
+    border: none;
+    flex: 1 50%;
+    width: 50%;
+    margin: 2px;
 }
 .categoriesButton:hover {
   background-color: #0c1738;
