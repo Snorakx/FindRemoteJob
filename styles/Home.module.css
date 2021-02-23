@@ -210,10 +210,8 @@
 }
 
 .categoriesButtonBox {
-  display: block;
-  margin: auto;
-  border: none;
-  padding: 3.5% 10% 0%;
+ display:flex;
+  padding:2rem;
 }
 .categoriesButton {
   background: #eb664c;
