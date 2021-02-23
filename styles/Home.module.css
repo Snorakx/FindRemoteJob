@@ -220,8 +220,6 @@
      background: #eb664c;
     border-radius: 0;
     border: none;
-    flex: 1 50%;
-    width: 50%;
     margin: 2px;
 }
 .categoriesButton:hover {
