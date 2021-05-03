@@ -42,7 +42,7 @@ const categoriesArray = [
 ];
 
 export default function Home({ data }) {
-  const { jobs: defaultResults = [] } = data; //tak kurwa kazde api ma tu inne kurwa zmienen
+  const { jobs: defaultResults = [] } = data; 
 
   const [results, updateResults] = useState(defaultResults);
 
